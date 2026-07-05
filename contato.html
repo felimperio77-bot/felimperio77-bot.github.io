@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato — Site Felipe</title>
+  <meta name="description" content="Fale com o Site Felipe: dúvidas, sugestões ou feedback sobre o conteúdo do universo de One Piece.">
+  <meta name="keywords" content="contato, One Piece, fale conosco, formulário">
+  <meta name="author" content="Felipe">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="contato.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <nav class="barra-nav" aria-label="Navegação principal">
+      <a href="index.html" class="logo">SITE <span>FELIPE</span></a>
+      <ul class="menu-lista" id="menuLista">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sagas.html">Sagas</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top: 56px; padding-bottom: 24px;">
+      <span class="eyebrow">Fala com a gente</span>
+      <h1>Contato</h1>
+      <p class="destaque" style="margin-top: 0.6em;">
+        Achou algo errado, quer sugerir uma saga ou só quer trocar uma ideia
+        sobre o mundo de One Piece? Manda a mensagem abaixo.
+      </p>
+
+      <form class="form-contato" id="formularioContato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          <span class="mensagem-erro">Digite um nome com pelo menos 3 letras.</span>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+          <span class="mensagem-erro">Digite um e-mail válido (ex: nome@dominio.com).</span>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreve aqui..."></textarea>
+          <span class="mensagem-erro">Escreva uma mensagem com pelo menos 10 caracteres.</span>
+        </div>
+
+        <button type="submit" class="botao">Enviar mensagem</button>
+
+        <div class="confirmacao-envio" id="confirmacaoEnvio" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <p style="color:var(--texto); font-weight:600;">SITE FELIPE</p>
+        <p style="font-size:0.9rem;">Um mergulho no universo de One Piece.</p>
+      </div>
+      <div>
+        <p style="font-size:0.9rem;"><a href="sagas.html">Sagas</a> · <a href="mundo.html">Mundo</a></p>
+      </div>
+    </div>
+    <div class="painel-status">
+      <span class="status-ok">● Grand Line: navegável</span>
+      <span>Tempo médio de resposta: 1 dia</span>
+      <span>© 2026 Site Felipe</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

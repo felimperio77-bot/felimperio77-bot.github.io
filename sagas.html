@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sagas — Site Felipe</title>
+  <meta name="description" content="Conheça as principais sagas de One Piece, organizadas por mar: East Blue, Grand Line e Novo Mundo.">
+  <meta name="keywords" content="One Piece, sagas, East Blue, Grand Line, Novo Mundo, arcos">
+  <meta name="author" content="Felipe">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="sagas.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <nav class="barra-nav" aria-label="Navegação principal">
+      <a href="index.html" class="logo">SITE <span>FELIPE</span></a>
+      <ul class="menu-lista" id="menuLista">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sagas.html">Sagas</a></li>
+        <li><a href="mundo.html">Mundo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top: 56px;">
+      <span class="eyebrow">Linha do tempo</span>
+      <h1>Sagas</h1>
+      <p class="destaque" style="margin-top: 0.6em;">
+        A jornada passa por três grandes mares, cada um com seu próprio clima
+        e seus próprios desafios. Filtra abaixo pra ver saga por saga.
+      </p>
+
+      <div class="filtro-sagas" role="group" aria-label="Filtrar sagas por mar">
+        <button class="filtro-botao ativo" data-filtro="todos">Todos</button>
+        <button class="filtro-botao" data-filtro="east-blue">East Blue</button>
+        <button class="filtro-botao" data-filtro="grand-line">Grand Line</button>
+        <button class="filtro-botao" data-filtro="novo-mundo">Novo Mundo</button>
+      </div>
+
+      <div class="grade">
+        <article class="cartao" data-mar="east-blue">
+          <div class="cartao-icone"><img src="assets/icon-navio.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">East Blue</span>
+          <h3>Romance Dawn</h3>
+          <p>O início de tudo: um garoto de chapéu de palha parte sozinho rumo ao mar, decidido a montar sua própria tripulação.</p>
+        </article>
+
+        <article class="cartao" data-mar="east-blue">
+          <div class="cartao-icone"><img src="assets/icon-bandeira.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">East Blue</span>
+          <h3>Arlong Park</h3>
+          <p>Um vilarejo sob o domínio de um pirata tirano — e a virada de uma das personagens mais importantes da tripulação.</p>
+        </article>
+
+        <article class="cartao" data-mar="grand-line">
+          <div class="cartao-icone"><img src="assets/icon-globo.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">Grand Line</span>
+          <h3>Alabasta</h3>
+          <p>Um reino à beira de uma guerra civil provocada por uma organização secreta escondida nas sombras.</p>
+        </article>
+
+        <article class="cartao" data-mar="grand-line">
+          <div class="cartao-icone"><img src="assets/icon-navio.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">Grand Line</span>
+          <h3>Skypiea</h3>
+          <p>Uma ilha nas nuvens, com regras e uma história completamente diferentes de tudo que veio antes.</p>
+        </article>
+
+        <article class="cartao" data-mar="grand-line">
+          <div class="cartao-icone"><img src="assets/icon-bandeira.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">Grand Line</span>
+          <h3>Marineford</h3>
+          <p>O confronto que redesenha o equilíbrio de poder entre piratas e Marinha — um marco na história do mundo.</p>
+        </article>
+
+        <article class="cartao" data-mar="novo-mundo">
+          <div class="cartao-icone"><img src="assets/icon-punho.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">Novo Mundo</span>
+          <h3>Dressrosa</h3>
+          <p>Um reino tomado por um dos Sete Corsários, escondendo um segredo que remonta a décadas.</p>
+        </article>
+
+        <article class="cartao" data-mar="novo-mundo">
+          <div class="cartao-icone"><img src="assets/icon-ancora.svg" alt="" width="46" height="46"></div>
+          <span class="tag-mar">Novo Mundo</span>
+          <h3>Wano</h3>
+          <p>Uma terra isolada do resto do mundo por dentro, dominada por um dos maiores vilões da história.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <p style="color:var(--texto); font-weight:600;">SITE FELIPE</p>
+        <p style="font-size:0.9rem;">Um mergulho no universo de One Piece.</p>
+      </div>
+      <div>
+        <p style="font-size:0.9rem;"><a href="contato.html">Contato</a> · <a href="mundo.html">Mundo</a></p>
+      </div>
+    </div>
+    <div class="painel-status">
+      <span class="status-ok">● Grand Line: navegável</span>
+      <span>Sagas: 9 catalogadas</span>
+      <span>© 2026 Site Felipe</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
